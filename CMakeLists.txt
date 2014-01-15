@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(kinect)
+project(demonstration_application)
 
 find_package(PCL REQUIRED)
 
@@ -23,8 +23,8 @@ link_directories(
 
 catkin_package()
 
-add_executable(kinect_node src/kinect.cpp)
-target_link_libraries(kinect_node
+add_executable(demonstration_application_node src/demonstration_application.cpp)
+target_link_libraries(demonstration_application_node
   ${catkin_LIBRARIES}
   ${PCL_LIBRARIES}
 )
